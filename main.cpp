@@ -1,4 +1,3 @@
-
 /* 
  * File:   main.cpp
  * Author: lucia
@@ -29,11 +28,23 @@
 #include "Inmobiliaria.h"
 #include "Interesado.h"
 #include "ListaDicc.h"
+<<<<<<< HEAD
 
 #include"Usuarios.h"
 #include "ColGenerica.h"
 #include "ListaIterator.h"
 #include "Lista.h"
+=======
+<<<<<<< HEAD
+#include "Fabrica.h"
+=======
+<<<<<<< HEAD
+#include"Usuarios.h"
+#include "ColGenerica.h"
+#include "ListaIterator.h"
+=======
+>>>>>>> origin/master
+>>>>>>> 729c524443422a5bcea25244112d98b827f9c0bc
 
 
 
@@ -62,7 +73,7 @@ void enviarMsjInmobiliaria(string msjInmo);
 void enviarMsjInteresado(string msjInter);
 
 
-//usuarios
+//Usuarios
 Usuarios * recorrerUsuarios(string, string);
 
 /////////////////////////////////////////
@@ -70,30 +81,11 @@ void altaInmobiliaria();
 void altaPropiedad();
 
 
-
-
 int idSesion=0;
 string us, pwd; // LOS DEFINO COMO VARIABLES GLOBALES PARA MOSTRAR EL USUARIO EN CADA CU
 
 int main(int argc, char** argv) {
-
-   /* int option = -1;
     
-    while(option != 0){
-        menu();
-        cin>>option;
-        switch(option){
-            case 1:
-                altaInmobiliaria();
-                break;
-            case 2:
-                altaPropiedad();
-                
-                break;
-        }
-    }*/
-    
-   // cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<endl<<endl;
 	int opcion=1;
 
 	while (opcion !=  0){
@@ -113,9 +105,9 @@ int main(int argc, char** argv) {
 ///////////////////// NUEVO /////////////////////
 
 void opcionesGenerales(){
-        cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<endl<<endl;
-	cout << "1 - Iniciar Sesion" << endl;
-     	cout << "0 - Salir" << endl; 
+    cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<endl<<endl;
+    cout << "1 - Iniciar Sesion" << endl;
+    cout << "0 - Salir" << endl; 
 }
 
 void administradorOpciones(){
@@ -262,8 +254,8 @@ Usuarios buscarUsr(string email){
 void altaInteresado(){
     cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<"\t"<<"Usuario: "<<us<<endl;
     cout<<"\n2 - Alta interesado\n";
-    //Fabrica* f = Fabrica::getInstance();
-   // IC_CliIt * iC = f->getC_CliIt();  EJEMPLO
+    Fabrica* f = Fabrica::getInstance();
+    IContUsuario * i = f->getContUsuario();  //EJEMPLO
     // buscarUsr(email);
     string nombre, apellido, email;
     int edad;
@@ -279,10 +271,9 @@ void altaInteresado(){
             cout<<"Ingrese edad: ";
             cin>>edad;
             cout<<"Ingrese email: ";
-            cin>>email;            
-            
-            // i->ingresarDatosInter(nombre, apellido, edad, email);
-            //cout<<"Usuario inmobiliaria creado correctamente ";
+            cin>>email;              
+            i->altaInteresado(nombre, apellido, edad, email);
+            cout<<"Usuario inmobiliaria creado correctamente ";
         }catch(invalid_argument & e){
             cout<<e.what();
         }
@@ -297,6 +288,8 @@ void altaInteresado(){
 dtReporteInmobiliaria obtenerReporteInmo(){
     cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<"\t"<<"Usuario: "<<us<<endl;
     cout<<"\n - Obtener Reporte Inmobiliaria";
+    
+    
    
     
     
@@ -332,6 +325,7 @@ void eliminarPropiedad(){
 
 
 dtPropiedad consultarPropiedad(){
+<<<<<<< HEAD
     sistema *s=new sistema;
     string letra;
     dtDepartamento *depto=new dtDepartamento;
@@ -356,6 +350,18 @@ dtPropiedad consultarPropiedad(){
     }
 
     else{if(sistema * s2 ==dynamic_cast <s2*> Interesado){}}
+=======
+    cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<"\t"<<"Usuario: "<<us<<endl;
+    cout<<"\n - Consultar propiedad";
+    
+    dtPropiedad *dtprop = new dtPropiedad;
+    ColGenerica *col =new ColGenerica;
+    if(sistema * s =dynamic_cast <s*> Inmobiliaria){
+        col->find()
+        
+        }}
+    else{if(sistema * s2 =dynamic_cast <s2*> Interesado){}}
+>>>>>>> 729c524443422a5bcea25244112d98b827f9c0bc
     
 
     
