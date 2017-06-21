@@ -17,6 +17,7 @@
 #include"dtDepartamento.h"
 #include"dtZonas.h"
 #include"dtEdificio.h"
+#include "dtPropiedad.h"
 
 
 
@@ -32,7 +33,7 @@ public:
     virtual ~sistema();
     
     void altaInmobiliaria(string nombreInm, dtDireccion* ubicacionInm);
-    
+    dtPropiedad *listarPropXZona(string codZona);
     dtDepartamento** listaDepartamentos();
     void seleccionaDepartamento(string letraDepartamento);
     

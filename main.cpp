@@ -29,13 +29,12 @@
 #include "Inmobiliaria.h"
 #include "Interesado.h"
 #include "ListaDicc.h"
-<<<<<<< HEAD
+
 #include"Usuarios.h"
 #include "ColGenerica.h"
 #include "ListaIterator.h"
-=======
+#include "Lista.h"
 
->>>>>>> 98f573d409f28fb8f6515f7030a55a23e0e27d41
 
 
 using namespace std;
@@ -333,38 +332,47 @@ void eliminarPropiedad(){
 
 
 dtPropiedad consultarPropiedad(){
-    cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<"\t"<<"Usuario: "<<us<<endl;
-    cout<<"\n - Consultar propiedad";
-    dtPropiedad *dtprop = new dtPropiedad;
-    ColGenerica *col =new ColGenerica;
-    if(sistema * s =dynamic_cast <s*> Inmobiliaria){
-        col->find()
-        
-        }}
-    else{if(sistema * s2 =dynamic_cast <s2*> Interesado){}}
+    sistema *s=new sistema;
+    string letra;
+    dtDepartamento *depto=new dtDepartamento;
+    if( s ==dynamic_cast <s*> Inmobiliaria){
+        depto=s->listaDepartamentos();
+        cout<<"Seleccione un Departamento: "<<endl;
+        cout<<"Clave: "<<" "<<"Nombre Departamento: ";<<endl;
+        while (depto) {
+            cout<<depto->getletraDepartamento()<<" "<<depto->getnombreDepartamento()<<endl;
+            
+        }
+        cin>>letra;
+        dtZonas *zonadepto = new dtZonas;
+        zonadepto=s->listaZonaDepartamento(letra);
+        system("cls");
+        cout<<"Seleccione la Zona: "<<endl;
+        cout<<"Clave: "<<" Nombre Zona: "<<endl;
+        while(zonadepto){cout<<zonadepto->getCodigoZona()<<" "<<zonadepto->getNombreZona();}
+        string codzona;
+        cin>>codzona;
+        //falta listar prop
+    }
+
+    else{if(sistema * s2 ==dynamic_cast <s2*> Interesado){}}
     
-<<<<<<< HEAD
 
     
  
-=======
->>>>>>> 98f573d409f28fb8f6515f7030a55a23e0e27d41
     
 }
 
 void altaEdificio(){
-<<<<<<< HEAD
  string nombre;
  int pisos;
  float gastosComunes;
  
-=======
     
     cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<"\t"<<"Usuario: "<<us<<endl;
     cout<<"\n - Alta edificio";    
     string nombre;
     int pisos, gastosComunes;
->>>>>>> 98f573d409f28fb8f6515f7030a55a23e0e27d41
     try {
          if (sistema * s = dynamic_cast <s*> Inmobiliaria){
          cout<<"Ingrese nombre del edificio: "<<endl;

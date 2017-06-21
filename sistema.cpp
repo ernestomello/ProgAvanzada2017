@@ -11,6 +11,10 @@
  * Created on 6 de mayo de 2017, 05:32 PM
  */
 #include "sistema.h"
+#include "dtPropiedad.h"
+#include "dtPropiedadApto.h"
+#include "dtPropiedadCasa.h"
+#include "ListaDicc.h"
 
 sistema::sistema() {
 }
@@ -42,6 +46,12 @@ dtZonas** sistema::listaZonaDepartamento(string letraDepartamento){
             dtZ[0] = zona1;
             dtZ[1] = zona2;
             return dtZ;
+}
+dtPropiedad ** sistema::listarPropXZona(string codZona){
+    dtPropiedad ** dtprop=new dtPropiedad*[2]();
+    ListDicc *s=new ListDicc;
+    
+
 }
 void sistema::seleccionaZona(string codigoZona){
 }

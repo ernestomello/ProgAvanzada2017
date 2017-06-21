@@ -12,6 +12,11 @@
  */
 
 #include"IContPorp.h"
+#include "IDictionary.h"
+#include "ColGenerica.h"
+#include "IKey.h"
+#include "IIterator.h"
+#include "ListaIterator.h"
 #include <iostream>
 
 #ifndef CONTPROP_H
@@ -21,7 +26,15 @@ using namespace std;
 
  class ContProp : public IContProp {
     private: 
-    
+        IDictionary *diccionario;
+        IKey *key;
+        IIterator *iterator;
+        ListDicc *listdiscc;
+        ListDiccIterator *listdicciterator;
+        ListDiccIteratorKey *listDiccIteratorKey;
+        ListDiccIteratorObj *listDiccIteratorObj;
+        ListaIterator *listaIterator;
+        
      
     public:
         ContProp();
