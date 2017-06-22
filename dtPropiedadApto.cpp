@@ -8,8 +8,9 @@
 #include "dtPropiedadApto.h"
 
 dtPropiedadApto::dtPropiedadApto(int cantAmbiente, int cantBanios, int cantDormitorios,
-        bool garage, dtDireccion* direccionProp, float mCuadradosEdificado, string nombreEdificio,
-        float valor, bool ventAlq){
+    bool garage, dtDireccion* direccionProp, float mCuadradosEdificado, string nombreEdificio,
+    float valor, bool ventAlq){
+    // artibutos
     this->cantAmbiente = cantAmbiente;
     this->cantBanios = cantBanios;
     this->cantDormitorios = cantDormitorios;

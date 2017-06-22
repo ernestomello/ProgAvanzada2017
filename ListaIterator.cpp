@@ -6,23 +6,36 @@
  */
 
 #include "ListaIterator.h"
+#include "stdio.h"
 
-
-ListaIterator::ListaIterator(){
-this->current=NULL;
-}
-ListaIterator::ListaIterator(NodoLista* curr){
-	this->current=curr;
-}
-ICollectible* ListaIterator::getCurrent(){
-		return(this->current->getNext()->getElem());
+ListaIterator::ListaIterator(Nodo *nodo)
+  :actual(nodo) {
 }
 
-bool ListaIterator:: hasCurrent(){
-	return(this->current->hasNext());	
+bool ListaIterator::hasNext() {
+  return actual->hasNext();
 }
-void  ListaIterator:: next(){
-    this->current=this->current->getNext();
+
+ICollectible *ListaIterator::next() {
+  ICollectible *res = getCurrent();
+  actual = actual->getNext();
+  return res;
 }
-ListaIterator::~ListaIterator(){}
+
+ICollectible *ListaIterator::getCurrent() {
+  return actual->getNext()->getICollectible();
+}
+
+void ListaIterator::remove() {
+  Nodo *temp = actual->getNext();
+  if (temp->hasNext()) {
+    actual->setNext(temp->getNext());
+  }
+  else {
+    actual->setNext(NULL);
+  }
+  temp->setNext(NULL);
+  delete temp;
+}
+
 

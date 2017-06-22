@@ -26,7 +26,7 @@ public:
     virtual ~ContUsuario();
     
     void altaInmobiliaria(string, dtDireccion*, string);
-    void altaInteresado();
+    void altaInteresado(string,string,int,string);
     Usuarios ** usuarioLogueado();
     void iniciarSesion(string, string);
     bool verificarContrasena(string, string);

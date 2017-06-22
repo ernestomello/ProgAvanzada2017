@@ -98,4 +98,3 @@ ListDicc:: ~ListDicc(){
 	delete(this->primero);
 }
 
-

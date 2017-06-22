@@ -25,7 +25,7 @@ public:
     virtual ~IContUsuario();
     
     virtual void altaInmobiliaria(string, dtDireccion *, string)= 0;
-    virtual void altaInteresado()= 0;
+    virtual void altaInteresado(string,string,int,string)= 0;
     virtual Usuarios ** usuarioLogueado()= 0;
     virtual void iniciarSesion(string, string)= 0;
     virtual bool verificarContrasena(string, string)= 0;

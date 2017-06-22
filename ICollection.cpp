@@ -4,20 +4,19 @@
  * and open the template in the editor.
  */
 #include "ICollection.h"
-<<<<<<< HEAD
+
 #include "StringKey.h"
 #include "ListaDicc.h"
 #include "Propiedad.h"
 #include "ListDiccIteratorObj.h"
 #include "ListDiccIteratorKey.h"
+#include "IDictionary.h"
 
 
 
 //destructor		
 ICollection::~ ICollection(){
 }
-=======
-#include "IDictionary.h"
 
 ICollection::ICollection(){
     this->= new ListDicc();
@@ -70,6 +69,4 @@ unsigned int ICollection::size(){
 ICollection::~ ICollection(){
 	delete(this->dicc);
 }
-
->>>>>>> origin/master
 

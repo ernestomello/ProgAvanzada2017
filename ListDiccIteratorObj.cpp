@@ -17,4 +17,3 @@ ICollectible* ListDiccIteratorObj::getCurrent(){
 	return(p->getObject());
 }
 
-

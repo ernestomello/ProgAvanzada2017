@@ -10,7 +10,6 @@
       <itemPath>Aviso.h</itemPath>
       <itemPath>Casa.h</itemPath>
       <itemPath>Chat.h</itemPath>
-      <itemPath>ColGenerica.h</itemPath>
       <itemPath>ContProp.h</itemPath>
       <itemPath>ContUsuario.h</itemPath>
       <itemPath>Departamento.h</itemPath>
@@ -32,13 +31,11 @@
       <itemPath>ListaDicc.h</itemPath>
       <itemPath>ListaIterator.h</itemPath>
       <itemPath>Mensaje.h</itemPath>
+      <itemPath>Nodo.h</itemPath>
       <itemPath>NodoDicc.h</itemPath>
-      <itemPath>NodoLista.h</itemPath>
       <itemPath>Par.h</itemPath>
       <itemPath>PropInmo.h</itemPath>
       <itemPath>Propiedad.h</itemPath>
-      <itemPath>String.h</itemPath>
-      <itemPath>StringKey.h</itemPath>
       <itemPath>Usuarios.h</itemPath>
       <itemPath>Venta.h</itemPath>
       <itemPath>Zona.h</itemPath>
@@ -75,7 +72,6 @@
       <itemPath>Aviso.cpp</itemPath>
       <itemPath>Casa.cpp</itemPath>
       <itemPath>Chat.cpp</itemPath>
-      <itemPath>ColGenerica.cpp</itemPath>
       <itemPath>ContProp.cpp</itemPath>
       <itemPath>ContUsuario.cpp</itemPath>
       <itemPath>Departamento.cpp</itemPath>
@@ -85,7 +81,6 @@
       <itemPath>IContProp.cpp</itemPath>
       <itemPath>IContUsuario.cpp</itemPath>
       <itemPath>IDictionary.cpp</itemPath>
-      <itemPath>IIterator.cpp</itemPath>
       <itemPath>IKey.cpp</itemPath>
       <itemPath>Inmobiliaria.cpp</itemPath>
       <itemPath>Interesado.cpp</itemPath>
@@ -96,13 +91,11 @@
       <itemPath>ListaDicc.cpp</itemPath>
       <itemPath>ListaIterator.cpp</itemPath>
       <itemPath>Mensaje.cpp</itemPath>
+      <itemPath>Nodo.cpp</itemPath>
       <itemPath>NodoDicc.cpp</itemPath>
-      <itemPath>NodoLista.cpp</itemPath>
       <itemPath>Par.cpp</itemPath>
       <itemPath>PropInmo.cpp</itemPath>
       <itemPath>Propiedad.cpp</itemPath>
-      <itemPath>String.cpp</itemPath>
-      <itemPath>StringKey.cpp</itemPath>
       <itemPath>Usuarios.cpp</itemPath>
       <itemPath>Venta.cpp</itemPath>
       <itemPath>Zona.cpp</itemPath>
@@ -188,10 +181,6 @@
       </item>
       <item path="Chat.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ColGenerica.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ColGenerica.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="ContProp.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ContProp.h" ex="false" tool="3" flavor2="0">
@@ -229,8 +218,6 @@
       <item path="IDictionary.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="IDictionary.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="IIterator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="IIterator.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -274,13 +261,13 @@
       </item>
       <item path="Mensaje.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Nodo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="NodoDicc.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NodoDicc.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="NodoLista.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="NodoLista.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Par.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -293,14 +280,6 @@
       <item path="Propiedad.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Propiedad.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="String.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="String.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="StringKey.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="StringKey.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Usuarios.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -437,10 +416,6 @@
       </item>
       <item path="Chat.h" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="ColGenerica.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="ColGenerica.h" ex="false" tool="3" flavor2="0">
-      </item>
       <item path="ContProp.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="ContProp.h" ex="false" tool="3" flavor2="0">
@@ -478,8 +453,6 @@
       <item path="IDictionary.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="IDictionary.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="IIterator.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="IIterator.h" ex="false" tool="3" flavor2="0">
       </item>
@@ -523,13 +496,13 @@
       </item>
       <item path="Mensaje.h" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="Nodo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Nodo.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="NodoDicc.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="NodoDicc.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="NodoLista.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="NodoLista.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Par.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -542,14 +515,6 @@
       <item path="Propiedad.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="Propiedad.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="String.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="String.h" ex="false" tool="3" flavor2="0">
-      </item>
-      <item path="StringKey.cpp" ex="false" tool="1" flavor2="0">
-      </item>
-      <item path="StringKey.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Usuarios.cpp" ex="false" tool="1" flavor2="0">
       </item>

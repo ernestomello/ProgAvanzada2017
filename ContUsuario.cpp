@@ -26,7 +26,7 @@ using namespace std;
     ContUsuario::~ContUsuario() {
     }
 
-      void ContUsuario::altaInteresado(){
+      void ContUsuario::altaInteresado(string nombre, string apellido, int edad, string email){
     }
       void ContUsuario::altaSesion(){
 

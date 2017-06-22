@@ -50,8 +50,8 @@ void sistema::altaPropiedadCasa (dtPropiedadCasa){
 }
 dtEdificio** sistema::listarEdificioZona(string codigoZona){
     dtEdificio ** dtE = new dtEdificio*[2](); 
-    dtEdificio * edificio1 = new dtEdificio("Edificio 1");
-    dtEdificio * edificio2 = new dtEdificio("Edificio 2" );
+    dtEdificio * edificio1 = new dtEdificio("Edificio1", 1, 1500);
+    dtEdificio * edificio2 = new dtEdificio("Edificio2", 1, 1500 );
             dtE[0] = edificio1;
             dtE[1] = edificio2;
             return dtE;

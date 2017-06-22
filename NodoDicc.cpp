@@ -48,4 +48,3 @@ NodoDicc:: ~NodoDicc(){
 		delete(this->next);
 }
 
-

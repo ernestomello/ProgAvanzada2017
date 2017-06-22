@@ -41,7 +41,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/Aviso.o \
 	${OBJECTDIR}/Casa.o \
 	${OBJECTDIR}/Chat.o \
-	${OBJECTDIR}/ColGenerica.o \
 	${OBJECTDIR}/ContProp.o \
 	${OBJECTDIR}/ContUsuario.o \
 	${OBJECTDIR}/Departamento.o \
@@ -51,7 +50,6 @@ OBJECTFILES= \
 	${OBJECTDIR}/IContProp.o \
 	${OBJECTDIR}/IContUsuario.o \
 	${OBJECTDIR}/IDictionary.o \
-	${OBJECTDIR}/IIterator.o \
 	${OBJECTDIR}/IKey.o \
 	${OBJECTDIR}/Inmobiliaria.o \
 	${OBJECTDIR}/Interesado.o \
@@ -62,13 +60,11 @@ OBJECTFILES= \
 	${OBJECTDIR}/ListaDicc.o \
 	${OBJECTDIR}/ListaIterator.o \
 	${OBJECTDIR}/Mensaje.o \
+	${OBJECTDIR}/Nodo.o \
 	${OBJECTDIR}/NodoDicc.o \
-	${OBJECTDIR}/NodoLista.o \
 	${OBJECTDIR}/Par.o \
 	${OBJECTDIR}/PropInmo.o \
 	${OBJECTDIR}/Propiedad.o \
-	${OBJECTDIR}/String.o \
-	${OBJECTDIR}/StringKey.o \
 	${OBJECTDIR}/Usuarios.o \
 	${OBJECTDIR}/Venta.o \
 	${OBJECTDIR}/Zona.o \
@@ -148,11 +144,6 @@ ${OBJECTDIR}/Chat.o: Chat.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Chat.o Chat.cpp
 
-${OBJECTDIR}/ColGenerica.o: ColGenerica.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ColGenerica.o ColGenerica.cpp
-
 ${OBJECTDIR}/ContProp.o: ContProp.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
@@ -197,11 +188,6 @@ ${OBJECTDIR}/IDictionary.o: IDictionary.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/IDictionary.o IDictionary.cpp
-
-${OBJECTDIR}/IIterator.o: IIterator.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/IIterator.o IIterator.cpp
 
 ${OBJECTDIR}/IKey.o: IKey.cpp
 	${MKDIR} -p ${OBJECTDIR}
@@ -253,15 +239,15 @@ ${OBJECTDIR}/Mensaje.o: Mensaje.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mensaje.o Mensaje.cpp
 
+${OBJECTDIR}/Nodo.o: Nodo.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Nodo.o Nodo.cpp
+
 ${OBJECTDIR}/NodoDicc.o: NodoDicc.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NodoDicc.o NodoDicc.cpp
-
-${OBJECTDIR}/NodoLista.o: NodoLista.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NodoLista.o NodoLista.cpp
 
 ${OBJECTDIR}/Par.o: Par.cpp
 	${MKDIR} -p ${OBJECTDIR}
@@ -277,16 +263,6 @@ ${OBJECTDIR}/Propiedad.o: Propiedad.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Propiedad.o Propiedad.cpp
-
-${OBJECTDIR}/String.o: String.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/String.o String.cpp
-
-${OBJECTDIR}/StringKey.o: StringKey.cpp
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/StringKey.o StringKey.cpp
 
 ${OBJECTDIR}/Usuarios.o: Usuarios.cpp
 	${MKDIR} -p ${OBJECTDIR}
