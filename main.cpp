@@ -22,12 +22,39 @@
 #include"Fabrica.h"
 #include"sistema.h"
 #include"PropInmo.h"
+<<<<<<< HEAD
 #include"Propiedad.h"
 #include"ICollection.h"
 #include"Inmobiliaria.h"
 #include"Interesado.h"
 #include"ListaDicc.h"
 #include"Usuarios.h"
+=======
+#include "dtPropiedadApto.h"
+#include "dtPropiedadCasa.h"
+#include "ICollection.h"
+#include "Inmobiliaria.h"
+#include "Interesado.h"
+#include "ListaDicc.h"
+<<<<<<< HEAD
+
+#include"Usuarios.h"
+#include "ColGenerica.h"
+#include "ListaIterator.h"
+#include "Lista.h"
+=======
+<<<<<<< HEAD
+#include "Fabrica.h"
+=======
+<<<<<<< HEAD
+#include"Usuarios.h"
+#include "ColGenerica.h"
+#include "ListaIterator.h"
+=======
+>>>>>>> origin/master
+>>>>>>> 729c524443422a5bcea25244112d98b827f9c0bc
+
+>>>>>>> 3470b3c80ced2f2b69a59537769188547f36e8dc
 
 #include"ListaIterator.h"
 #include"string.h"
@@ -276,6 +303,7 @@ void altaInteresado(){
     cout<<"\n - Obtener Reporte Inmobiliaria";
     
 }
+<<<<<<< HEAD
 //
 void cerrarSesion(){}
 //    string opCerrar="n";
@@ -323,6 +351,101 @@ dtPropiedad consultarPropiedad(){}
 //    cout<<"Desarrollo Consultar Propiedad";
 ////
 void altaEdificio(){
+=======
+
+void modificarPropiedad(){
+    cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<"\t"<<"Usuario: "<<us<<endl;
+    cout<<"\n Modificar Propiedad";
+    string codigoProp;
+    
+    cout<<"\nIngrese codigo propiedad: ";
+    cin>>codigoProp;
+    // recorrerPropiedades(codigoProp);
+    //     
+}
+
+void eliminarPropiedad(){
+    cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<"\t"<<"Usuario: "<<us<<endl;
+    cout<<"Desarrollo Eliminar Propiedad";
+}
+
+
+dtPropiedad consultarPropiedad(){
+<<<<<<< HEAD
+    sistema *s=new sistema;
+    string letra;
+    dtDepartamento *depto=new dtDepartamento;
+    if( s ==dynamic_cast <s*> Inmobiliaria){
+        depto=s->listaDepartamentos();
+        cout<<"Seleccione un Departamento: "<<endl;
+        cout<<"Clave: "<<" "<<"Nombre Departamento: ";<<endl;
+        while (depto) {
+            cout<<depto->getletraDepartamento()<<" "<<depto->getnombreDepartamento()<<endl;
+            
+        }
+        cin>>letra;
+        dtZonas *zonadepto = new dtZonas;
+        zonadepto=s->listaZonaDepartamento(letra);
+        system("cls");
+        cout<<"Seleccione la Zona: "<<endl;
+        cout<<"Clave: "<<" Nombre Zona: "<<endl;
+        while(zonadepto){cout<<zonadepto->getCodigoZona()<<" "<<zonadepto->getNombreZona();}
+        string codzona;
+        cin>>codzona;
+        //falta listar prop
+    }
+
+    else{if(sistema * s2 ==dynamic_cast <s2*> Interesado){}}
+=======
+    cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<"\t"<<"Usuario: "<<us<<endl;
+    cout<<"\n - Consultar propiedad";
+    
+    dtPropiedad *dtprop = new dtPropiedad;
+    ColGenerica *col =new ColGenerica;
+    if(sistema * s =dynamic_cast <s*> Inmobiliaria){
+        col->find()
+        
+        }}
+    else{if(sistema * s2 =dynamic_cast <s2*> Interesado){}}
+>>>>>>> 729c524443422a5bcea25244112d98b827f9c0bc
+    
+
+    
+ 
+    
+}
+
+void altaEdificio(){
+ string nombre;
+ int pisos;
+ float gastosComunes;
+ 
+    
+    cout << endl << "Gestor de Ofertas Inmobiliarias - Mi Casa"<<"\t"<<"Usuario: "<<us<<endl;
+    cout<<"\n - Alta edificio";    
+    string nombre;
+    int pisos, gastosComunes;
+    try {
+         if (sistema * s = dynamic_cast <s*> Inmobiliaria){
+         cout<<"Ingrese nombre del edificio: "<<endl;
+         cin>>nombre;
+         ICollection * coso= new ICollection;
+         if(coso->member(nombre)!=false){
+         cout<<"Ingrese la cantidad de pisos: "<<endl;
+         cin<<pisos;
+         cout<<"Ingrese el valor de los gastos comunes: "<<endl;}
+         else invalid_argument("Nombre repetido");
+         cin<<gastosComunes;
+         dtEdificio dtedi = new dtEdificio(nombre,pisos,gastosComunes);
+         coso->add(dtedi);
+    }
+    else {invalid_argument("Solo puede el user Inmobiliaria");}
+      
+    }
+    catch(invalid_argument& excepcion){
+				cout<<excepcion.what();
+			}
+>>>>>>> 3470b3c80ced2f2b69a59537769188547f36e8dc
 }
 //    try {
 //         if (sistema * s = dynamic_cast <s*> Inmobiliaria){

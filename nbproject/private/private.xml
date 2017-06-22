@@ -6,6 +6,14 @@
     </data>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
         <group/>
+=======
+        <group>
+            <file>file:/home/juan/Documentos/ProgAvanzada2017/main.cpp</file>
+            <file>file:/home/juan/Documentos/ProgAvanzada2017/sistema.h</file>
+            <file>file:/home/juan/Documentos/ProgAvanzada2017/sistema.cpp</file>
+        </group>
+>>>>>>> 3470b3c80ced2f2b69a59537769188547f36e8dc
     </open-files>
 </project-private>

@@ -17,9 +17,13 @@
 #include"dtDepartamento.h"
 #include"dtZonas.h"
 #include"dtEdificio.h"
+<<<<<<< HEAD
 #include"dtPropiedadCasa.h"
 #include"dtPropiedadApto.h"
 
+=======
+#include "dtPropiedad.h"
+>>>>>>> 3470b3c80ced2f2b69a59537769188547f36e8dc
 
 
 
@@ -35,7 +39,7 @@ public:
     virtual ~sistema();
     
     void altaInmobiliaria(string nombreInm, dtDireccion* ubicacionInm);
-    
+    dtPropiedad *listarPropXZona(string codZona);
     dtDepartamento** listaDepartamentos();
     void seleccionaDepartamento(string letraDepartamento);
     
