@@ -48,6 +48,7 @@ dtZonas* Zona::getZonas(){
 Zona::Zona(string nombreZ,string codigoZ){
     this->nombreZona=nombreZ;
     this->codigoZona=codigoZ;
+    this->IPropiedad = new ListDicc();
 }
 
 

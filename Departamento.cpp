@@ -26,10 +26,12 @@ Departamento::Departamento() {
 Departamento::Departamento(const Departamento& orig) {
     this->letraDpto=Departamento().letraDpto;
     this->nombreDpto=Departamento().nombreDpto;
+    this->IZona = new ListDicc();
 }
 Departamento::Departamento(string letradepto,string nombredepto){
     this->letraDpto=letradepto;
     this->nombreDpto=nombredepto;
+    this->IZona = new ListDicc();
 }
 
 Departamento::~Departamento() {    

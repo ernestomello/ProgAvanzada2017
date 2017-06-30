@@ -1030,10 +1030,10 @@ void cargarDeptos(){
     depto = new dtDepartamento(letraDepto, nombreDepto);
     itD->altaDepto(depto);
    
-    letraDepto = "A";
-    nombreDepto = "Canelones";
-    depto = new dtDepartamento(letraDepto, nombreDepto);
-    itD->altaDepto(depto);
+//    letraDepto = "A";
+//    nombreDepto = "Canelones";
+//    depto = new dtDepartamento(letraDepto, nombreDepto);
+//    itD->altaDepto(depto);
    
     letraDepto = "B";
     nombreDepto = "Maldonado";
@@ -1122,11 +1122,12 @@ void cargaDatosPrueba(){
     //cargarUsuAdmin();
     cargarUsuInmo();
     cargarUsuInteresado();
-    cargarEdificios();
+    cargarEdificios();   
+    cargarDeptos();   
+    cargarZonas();
+    
     cargarPropAptos();
     cargarPropCasa();
-    cargarZonas();
-    cargarDeptos();
     cargarMensajes();
 }
 

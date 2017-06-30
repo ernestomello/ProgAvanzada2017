@@ -8,13 +8,30 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/ernesto/NetBeansProjects/PA2017/Inmobiliaria.cpp</file>
-            <file>file:/home/ernesto/NetBeansProjects/PA2017/IContUsuario.h</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/Usuarios.cpp</file>
             <file>file:/home/ernesto/NetBeansProjects/PA2017/Administrador.cpp</file>
             <file>file:/home/ernesto/NetBeansProjects/PA2017/IDictionary.h</file>
             <file>file:/home/ernesto/NetBeansProjects/PA2017/ContUsuario.h</file>
-            <file>file:/home/ernesto/NetBeansProjects/PA2017/Interesado.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/Departamento.h</file>
             <file>file:/home/ernesto/NetBeansProjects/PA2017/ContUsuario.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/Departamento.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/ICollectible.h</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/ContProp.h</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/dtDepartamento.cpp</file>
             <file>file:/home/ernesto/NetBeansProjects/PA2017/main.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/Zona.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/IContPorp.h</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/ContProp.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/Interesado.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/ListDicc.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/StringKey.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/Usuarios.h</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/IContUsuario.h</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/NodoDicc.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/Par.cpp</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/IKey.h</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/Zona.h</file>
+            <file>file:/home/ernesto/NetBeansProjects/PA2017/Fabrica.cpp</file>
         </group>
     </open-files>
 </project-private>
